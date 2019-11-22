@@ -7,10 +7,14 @@ public class CameraController : MonoBehaviour
     //Follow on target's X/Z plane
     //smooth rotations around target in 45 degree increments
     public Transform target;
+    public Transform object1;
+    public Transform object2;
     public Vector3 offsetPos;
     public float moveSpeed = 5;
     public float turnSpeed = 10;
     public float smoothSpeed = 0.5f;
+    [Range(0,1)]
+    public float zoomAmmount;
 
     Quaternion targetRotation;
     Vector3 targetPos;
@@ -22,6 +26,10 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
+        target.position = CalculateMiddlePoint(object1,object2);
+        KeepInFrame();
+
+
         MoveWithTarget();
         LookAtTarget();
 
@@ -37,6 +45,28 @@ public class CameraController : MonoBehaviour
         
 
 
+    }
+
+    public Vector3 CalculateMiddlePoint(Transform object1,Transform object2)
+    {
+        Vector3 middlePoint = object2.position + (object1.position - object2.position) / 2;
+
+        return middlePoint;
+    }
+
+    public void KeepInFrame()
+    {
+        
+            if (Vector3.Distance(target.position, object1.position) > Vector3.Distance(target.position, object2.position))
+            {
+                GetComponent<Camera>().orthographicSize = Vector3.Distance(target.position, object1.position) * zoomAmmount + 2;
+            }
+            else
+            {
+                GetComponent<Camera>().orthographicSize = Vector3.Distance(target.position, object2.position) * zoomAmmount + 2 ;
+            }
+        
+        
     }
 
     //move the camera to the target position + current camera offset

@@ -8,6 +8,7 @@ public class TankHead : MonoBehaviour
     public GameObject tankBody;
     public GameObject bullet;
     public GameObject bulletSpawnPoint;
+    public TankStats tankStats;
 
     //Controls
     public string fireButton;
@@ -17,7 +18,10 @@ public class TankHead : MonoBehaviour
     public float chargeRate = 1000;
     public float fireAmmount;
 
-
+    private void Start()
+    {
+        tankStats = GetComponentInParent<TankStats>();
+    }
     private void Update()
     {
         if(Input.GetButton(fireButton))
@@ -50,6 +54,7 @@ public class TankHead : MonoBehaviour
     {
         GameObject temp = Instantiate(bullet);
         temp.transform.position = bulletSpawnPoint.transform.position;
+        temp.GetComponent<Bullet>().damage = tankStats.damage;
         temp.GetComponent<Rigidbody>().AddForce(transform.forward * fireAmmount);
         fireAmmount = 0;
     }

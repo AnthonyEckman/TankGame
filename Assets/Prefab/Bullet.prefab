@@ -125,3 +125,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
+  explosionZone: {fileID: 8692994566668515085, guid: b168067428568704a975619a92e38766,
+    type: 3}
