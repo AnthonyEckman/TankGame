@@ -6,6 +6,7 @@ public class InputManager : MonoBehaviour
 {
     public Vector2 player1Directions;
     public Vector2 player2Directions;
+    public Vector2 Player2Facing;
 
 
     // Start is called before the first frame update
@@ -22,9 +23,14 @@ public class InputManager : MonoBehaviour
 
     private void GetPlayerInputs()
     {
+        //Player1
         player1Directions.x = Input.GetAxisRaw("Horizontal1");
         player1Directions.y = Input.GetAxisRaw("Vertical1");
+
+        //Player2
         player2Directions.x = Input.GetAxisRaw("Horizontal2");
         player2Directions.y = Input.GetAxisRaw("Vertical2");
+        Player2Facing.x = Input.GetAxisRaw("FacingX");
+        Player2Facing.y = Input.GetAxisRaw("FacingY");
     }
 }

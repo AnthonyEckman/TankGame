@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6885431275398987199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.534, z: 1.022}
+  m_LocalPosition: {x: 0, y: 0.534, z: 0.973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8832297709295412920}
@@ -95,6 +95,7 @@ MonoBehaviour:
   velocity: 5
   turnspeed: 10
   mySpot: 0
+  inputManager: {fileID: 0}
 --- !u!54 &6885431276041847080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -497,6 +498,7 @@ MonoBehaviour:
   bullet: {fileID: 1540728696816218692, guid: 23a3d40b86650794ca96b18ff903c7c6, type: 3}
   bulletSpawnPoint: {fileID: 6885431275398987199}
   tankStats: {fileID: 0}
+  turnSpeed: 20
   fireButton: Fire1
   chargeRate: 1000
   fireAmmount: 0

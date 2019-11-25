@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -660,6 +660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1Directions: {x: 0, y: 0}
   player2Directions: {x: 0, y: 0}
+  Player2Facing: {x: 0, y: 0}
 --- !u!1 &1539973992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1172,7 @@ PrefabInstance:
     - target: {fileID: 6885431276041847079, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: mySpot
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8832297709297312800, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1330,6 +1331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885431276041847079, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
+        type: 3}
+      propertyPath: mySpot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832297709297312800, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}

@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float velocity = 5;
     public float turnspeed = 10;
     public PlayerNumber mySpot;
-    InputManager inputManager;
+    public InputManager inputManager;
     
 
     Vector2 input;

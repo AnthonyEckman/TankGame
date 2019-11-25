@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
 
     public GameObject explosionEffect;
     public GameObject explosionZone;
+    public Collider myBody;
     public int damage;
     // Start is called before the first frame update
     void Start()
@@ -23,14 +24,12 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<IDamagable>() != null)
-        {
-            DoDamage(collision.gameObject);
-        }
-        else
+
+        if (collision.collider != myBody)
         {
             Explosion();
         }
+        
     }
 
     private void DoDamage(GameObject target)
