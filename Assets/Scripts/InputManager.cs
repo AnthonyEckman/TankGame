@@ -30,7 +30,10 @@ public class InputManager : MonoBehaviour
         //Player2
         player2Directions.x = Input.GetAxisRaw("Horizontal2");
         player2Directions.y = Input.GetAxisRaw("Vertical2");
-        Player2Facing.x = Input.GetAxisRaw("FacingX");
-        Player2Facing.y = Input.GetAxisRaw("FacingY");
+        if (Input.GetAxisRaw("FacingX") > 0.1f || Input.GetAxisRaw("FacingY") > 0.1f ||Input.GetAxisRaw("FacingX") < -0.1f || Input.GetAxisRaw("FacingY") < -0.1f)
+        {
+            Player2Facing.x = Input.GetAxisRaw("FacingX");
+            Player2Facing.y = Input.GetAxisRaw("FacingY");
+        }
     }
 }

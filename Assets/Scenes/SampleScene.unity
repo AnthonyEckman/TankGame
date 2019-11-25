@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -546,7 +546,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -560,7 +560,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -10
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -1109,15 +1109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6885431276041847082, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
-        type: 3}
-      propertyPath: m_Name
-      value: TankMain2
-      objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.97
+      value: 18.06
       objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1127,7 +1122,7 @@ PrefabInstance:
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.29
+      value: -11.31
       objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1169,10 +1164,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6885431276041847082, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
+        type: 3}
+      propertyPath: m_Name
+      value: TankMain2
+      objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847079, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: mySpot
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832297709297312800, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1272,15 +1272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6885431276041847082, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
-        type: 3}
-      propertyPath: m_Name
-      value: TankMain
-      objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -12.29
       objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1290,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.4
+      value: 15.51
       objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847077, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
@@ -1332,10 +1327,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6885431276041847082, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
+        type: 3}
+      propertyPath: m_Name
+      value: TankMain
+      objectReference: {fileID: 0}
     - target: {fileID: 6885431276041847079, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
       propertyPath: mySpot
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8832297709297312800, guid: 28b1677c74faf10409b0ec1eb0a03a3a,
         type: 3}
