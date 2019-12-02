@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35ef6472ac50f04d9d3eb4fcc2fed00, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 530df6a91995c14aa9b9077c1ccd65de
+    GuidInternal: 
+    m_lastTime: -8586267686425522638
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 07ab9d993c0e124bbcdc15a048c7eeeb
+    GuidInternal: 
+    m_lastTime: -8586267673071623084
+    List:
+    - name: Cannon_Verb
+      guid: 6680197f3684384995b87d4aa129e98b
+      id: 3194489986
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Cannon_Verb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Cannon_Verb
+    - name: Music_Group
+      guid: f021967459302c42841cb8e704862821
+      id: 1221856762
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Music_Group
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Music_Group
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 318299476887a44d9df44615965fdd2a
+    GuidInternal: 
+    m_lastTime: -8586267673071722816
+    List:
+    - name: Tank_Sounds
+      guid: b00c23a9872eb642860da78561351575
+      id: 3691307416
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Sounds
+        ObjectType: 7
+      Path: Default Work Unit\Tank_Sounds
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 3e43238c06c7cc48a6d1ae4939acbbc2
+    GuidInternal: 
+    m_lastTime: -8586267673071832520
+    List:
+    - name: Bullet_Charge_Stop
+      guid: 7f13715683ba8c4290179410d20c6095
+      id: 258547723
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bullet_Charge_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Bullet_Charge_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Bullet_Explosion
+      guid: bf9819c18635ff4283000605a66de3dd
+      id: 2798586757
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bullet_Explosion
+        ObjectType: 3
+      Path: Default Work Unit\Bullet_Explosion
+      maxAttenuation: 0
+      maxDuration: 1.100452
+      minDuration: 1.007933
+    - name: Bullet_Fire
+      guid: 2415bb66ea1efe4a9372abf2642ad664
+      id: 2832877796
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bullet_Fire
+        ObjectType: 3
+      Path: Default Work Unit\Bullet_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MaxFireDing
+      guid: 2fdaef262cb7e84381e1d9902541858e
+      id: 3912863785
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MaxFireDing
+        ObjectType: 3
+      Path: Default Work Unit\MaxFireDing
+      maxAttenuation: 0
+      maxDuration: 4.273322
+      minDuration: 4.273322
+    - name: Music
+      guid: 5b6122ef59bb7d478cd8a1c15b5293b5
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 3
+      Path: Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play
+      guid: 1e1d44aa4f19214e83d920c4dd8d2a6f
+      id: 1256202815
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play
+        ObjectType: 3
+      Path: Default Work Unit\Play
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tank_Death
+      guid: 657ef9c4ae188942802e9103bfbece5b
+      id: 523896882
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Death
+        ObjectType: 3
+      Path: Default Work Unit\Tank_Death
+      maxAttenuation: 0
+      maxDuration: 0.451375
+      minDuration: 0.451375
+    - name: Tank_Drive
+      guid: e54d9e761525d94288dceac8a8e7afb7
+      id: 202289268
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Drive
+        ObjectType: 3
+      Path: Default Work Unit\Tank_Drive
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tank_Fire
+      guid: 8bacc3fd51c15f49a81af11bb1b9e93a
+      id: 4083953352
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Fire
+        ObjectType: 3
+      Path: Default Work Unit\Tank_Fire
+      maxAttenuation: 0
+      maxDuration: 1.164891
+      minDuration: 1.099511
+    - name: Tank_Move
+      guid: eb45438613386b429e0ce3cb12dabbca
+      id: 3885158875
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Move
+        ObjectType: 3
+      Path: Default Work Unit\Tank_Move
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tank_Stop
+      guid: c5cf9a5f055c0f47b117ba6c4c1c3179
+      id: 700963316
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Tank_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9300e033e48b674284be4727bc052456
+    GuidInternal: 
+    m_lastTime: -8586268498093226706
+    List:
+    - name: RTPC_TankSpeed
+      guid: a14d6f5bedd1064eb6d2ae48c8dbb129
+      id: 1235517532
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_TankSpeed
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_TankSpeed
+    - name: Tank_Engine
+      guid: ef7d7c02b6d3724b94699730ca1d67cb
+      id: 212754890
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tank_Engine
+        ObjectType: 13
+      Path: Default Work Unit\Tank_Engine
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: e0adf3f7410d4643bdd742a2fd7c27f6
+    GuidInternal: 
+    m_lastTime: -8586267686425273304
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 02570133f7b1fc41a840958bc55f3353
+    GuidInternal: 
+    m_lastTime: -8586267686424934204
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 37f5e2a7997e1e47b9bb8c02332bc441
+    GuidInternal: 
+    m_lastTime: -8586267686425622371
+    List: []
+  ExpandedItems:
+  - /Wwise Tank Game Integration
+  - /Wwise Tank Game Integration/Events
+  - /Wwise Tank Game Integration/Events/Default Work Unit
+  - /Wwise Tank Game Integration/SoundBanks
+  - /Wwise Tank Game Integration/SoundBanks/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

@@ -36,6 +36,8 @@ public class TankHead : MonoBehaviour
         {
             fireButton = "Fire2";
         }
+        AkSoundEngine.PostEvent("Tank_Move", gameObject);
+        AkSoundEngine.PostEvent("Music", gameObject);
     }
     private void Update()
     {
@@ -44,9 +46,17 @@ public class TankHead : MonoBehaviour
         {
             ChargeBullet();
         }
-        if(Input.GetButtonUp(fireButton))
+        if (Input.GetButtonDown(fireButton))
+        {
+            AkSoundEngine.PostEvent("Bullet_Fire", gameObject);
+            AkSoundEngine.PostEvent("MaxFireDing", gameObject);
+        }
+        if (Input.GetButtonUp(fireButton))
         {
             FireBullet();
+            AkSoundEngine.PostEvent("Tank_Fire", gameObject);
+            AkSoundEngine.PostEvent("Bullet_Charge_Stop", gameObject);
+            AkSoundEngine.PostEvent("Bullet_Launch", gameObject);
         }
         TurnHead();
         

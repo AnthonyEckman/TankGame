@@ -13,6 +13,7 @@ public class TankStats : MonoBehaviour, IDamagable
         if(health <= 0)
         {
             Dead();
+            AkSoundEngine.PostEvent("Tank_Death", gameObject);
         }
     }
     public void Dead()

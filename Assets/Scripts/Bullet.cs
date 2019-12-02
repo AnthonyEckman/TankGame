@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour
         if (collision.collider != myBody)
         {
             Explosion();
+            AkSoundEngine.PostEvent("Bullet_Explosion", gameObject);
         }
         
     }
